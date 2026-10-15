@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Calculator{
+	public static void  main (String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Calculate any two number: ");
+		int num1 = input.nextInt();
+		
+		System.out.print("Enter the second number: ");
+		int num2 = input.nextInt();
+		
+		System.out.print ("Enter any of the symbols +,-,*,/,%): ");
+		char symbol = input.next().charAt(0);
+		System.out.println("======================/n");
+		
+		switch(symbol) {
+			case '+':
+			        int addition = num1 + num2;
+					System.out.printf("%d - %d", num1,num2,addition);
+					
+		break;
+		    case '-':
+		            int subtraction = num1 - num2;
+			        System.out.printf("%d + %d", num1,num2,subtraction);  
+        break;
+            case '*':
+		            int multiplication = num1 * num2;
+			        System.out.printf("%d * %d = %d%n", num1,num2,multiplication);
+        break;
+            case '/':
+		            int division = num1 / num2;
+			        System.out.printf("%d / %d = %.2f%n", num1,num2,division); 
+        break;
+            case '%':
+		            int addition = num1 % num2;
+			        System.out.printf("%d %% %d = %d%n", num1,num2,remainder); 
+        break;
+        default:
+                    System.out.println("invalid input"); 
+					
+		}					
+					
+	}
+}
+  
